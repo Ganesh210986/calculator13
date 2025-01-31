@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>calculator</h1>
+    <div id="calculator">
+    <input type="text" class="screen"readonly>
+    <div id="buttons">
+    <div class="row1">
+        <button onclick="clearScreen()" class="top">Ac</button>
+        <button onclick="backSpace()" class="top">Del</button>
+        <button onclick="percentage()" class="top">%</button>
+        <button onclick="displayOnScreen('/')" class="operator">÷</button>
+    </div>
+  
+        
+        
+        
+        
+    
+    <div class="row2">
+        <button onclick="displayOnScreen('7')">7</button>
+        <button onclick="displayOnScreen(8)">8</button>
+        <button onclick="displayOnScreen(9)">9</button>
+        <button onclick="displayOnScreen('*')" class="operator">×</button>
+    </div>
+    <div class="row3">
+        <button onclick="displayOnScreen(4)">4</button>
+        <button onclick="displayOnScreen(5)">5</button>
+        <button onclick="displayOnScreen(6)">6</button>
+        <button onclick="displayOnScreen('-')" class="operator">-</button>
+        
+        
+    </div>
+    <div class="row4">
+        <button onclick="displayOnScreen(1)">1</button>
+        <button onclick="displayOnScreen(2)">2</button>
+        <button onclick="displayOnScreen(3)">3</button>
+        <button onclick="displayOnScreen('+')" class="operator">+</button>
+    </div>
+    <div class="row5">
+        <button onclick="displayOnScreen(0)" class="long">0</button>
+        <button onclick="displayOnScreen('.')">.</button>
+        <button onclick="calculate()" class="operator">=</button>
+        
+        
+        
+       
+        
+        
+
+
+    </div>
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
