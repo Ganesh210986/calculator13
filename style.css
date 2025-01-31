@@ -24,6 +24,7 @@ h1{
     background-color: rgb(17, 17, 17);
     color: white;
     overflow: hidden;
+    text-align: end;
 }
 #buttons{
     
