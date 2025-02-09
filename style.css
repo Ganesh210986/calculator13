@@ -4,6 +4,7 @@
 }
 body{
     background: linear-gradient(120deg, red, blue);
+    height: 100vw;
 
 
 
