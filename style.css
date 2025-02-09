@@ -1,9 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 body{
-    background-color: burlywood;
+    background: linear-gradient(120deg, red, blue);
+
+
 
 }
 h1{
+    color: white;
     text-align: center;
+    margin: 30px;
 }
 #calculator{
     background-color: rgb(17, 17, 17);
@@ -24,6 +32,7 @@ h1{
     background-color: rgb(17, 17, 17);
     color: white;
     overflow: hidden;
+    text-align: end;
 }
 #buttons{
     
@@ -46,6 +55,7 @@ button{
     padding: 2px;
     background-color: rgb(69, 69, 69);
     color: white;
+    cursor: pointer;
 
 
 }
@@ -78,4 +88,34 @@ button:active{
 }
 .top:active{
     background-color: rgb(213, 213, 213);
+}
+.History1{
+    
+    
+    margin: 2px auto;
+
+
+}
+li{
+    background-color: rgb(17, 17, 17);
+    color: white;
+    list-style:disc;
+    
+    max-width: 500px;
+    margin: 6px auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li img{
+    margin: 2px;
+border-radius: 4px;
+width: 25px;
+cursor: pointer;
+display: flex;
+justify-content: flex-end;
+
 }

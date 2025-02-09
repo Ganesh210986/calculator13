@@ -1,4 +1,6 @@
 let screen=document.querySelector(".screen");
+let history=[];
+let historylist=document.querySelector(".History1");
 function displayOnScreen(num){
     screen.value+=num;
 }
@@ -24,10 +26,30 @@ function percentage() {
 }
 function calculate(){
     try{
-        screen.value=eval(screen.value);
+        const expression= screen.value;
+         let result=eval(screen.value);
+        addToHistory(expression,result);
+        screen.value=result;
+
     }
     catch(error){
         screen.value="Error detected";
     }
    
 }
+function addToHistory(expression,result){
+let li=document.createElement("li");
+historylist.appendChild(li);
+li.innerHTML=`${expression}=${result}`;
+let dlnbutton=document.createElement("img");
+dlnbutton.src="trash.png";
+dlnbutton.addEventListener("click", function(){
+    historylist.removeChild(li);
+    historylist.removeChild(dlnbutton);
+
+})
+li.appendChild(dlnbutton);
+
+}
+
+
